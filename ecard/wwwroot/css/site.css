@@ -30,7 +30,8 @@ a {
 
 
 h1 {
-    color: #990012;
+    color: #fff;
+    background: #000;
 }
 
 h2 {
@@ -39,6 +40,9 @@ h2 {
 
 
 p {
+    color: #fff; /*white*/
+        /*#990012;*/
+    background: #000000; /*black*/
 }
 
 .images{
@@ -52,4 +56,8 @@ p {
 .carousel-caption{
     opacity: 0.5;
 }
-
+.carousel-indicators {
+    color: #990012;
+    opacity: 0.5;
+    background: #000000; /*black*/
+}
