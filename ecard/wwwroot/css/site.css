@@ -1,7 +1,7 @@
 body {
     background: #000000;
     color: #ffffff;
-    background-image: url('../images/tile.jpg');
+    /*background-image: url('../images/tile.jpg');*/
     /*background-size: contain;*/
     font-family: Arial;
     font-size: 16px
@@ -37,12 +37,17 @@ h2 {
 
 }
 
-div {
-
-    Backgrounnd: #ccc;
-
-}
-
 
 p {
 }
+
+.images{
+    background-image: 
+}
+
+.carousel-inner .item  .images {
+    width: 70%;
+    margin: auto;
+}
+
+
