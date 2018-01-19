@@ -41,7 +41,7 @@ h2 {
 
 p {
     color: #fff; /*white*/
-        /*#990012;*/
+        /*#990012; dark shade of red*/
     background: #000000; /*black*/
 }
 
@@ -57,7 +57,6 @@ p {
     opacity: 0.5;
 }
 .carousel-indicators {
-    color: #990012;
     opacity: 0.5;
     background: #000000; /*black*/
 }
