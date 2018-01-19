@@ -1,6 +1,6 @@
 body {
     background: #000000;
-    color: #ffffff;
+    color: #fff;
     /*background-image: url('../images/tile.jpg');*/
     /*background-size: contain;*/
     font-family: Arial;
@@ -13,11 +13,11 @@ a {
     text-decoration: none;
 }
 
-    a:hover {
+    /*a:hover {
         color: #ffd800;
         font-size: 1.2em;
         width: 80%;
-    }
+    }*/
 
     a:visited {
         color: #4cff00;
@@ -30,7 +30,7 @@ a {
 
 
 h1 {
-
+    color: #990012;
 }
 
 h2 {
@@ -49,5 +49,7 @@ p {
     width: 70%;
     margin: auto;
 }
-
+.carousel-caption{
+    opacity: 0.5;
+}
 
