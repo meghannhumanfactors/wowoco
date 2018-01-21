@@ -1,10 +1,10 @@
 body {
-    background: #000000;
+    background: #FFF;
     color: #fff;
+    font-family: Arial;
+    font-size: 14px;
     /*background-image: url('../images/tile.jpg');*/
     /*background-size: contain;*/
-    font-family: Arial;
-    font-size: 22px
     /*background: #0771e8a url('../images/tile.jpg'); no-repeat top center;*/
 }
 
@@ -27,37 +27,48 @@ a {
         color: #94268c;
     }
 
+.photo {
+    width: 700px;
+    border: 1px solid #000;
+    background: pink;
+    text-align:center;
+    float: left;
+
+    border-radius:1em;
+    padding: 3em;
+    margin: 1em;
+}
 
 
-h1 {
-    /*color: #fff;
-    background: #000;*/
+/*h1 {
+    color: #fff;
+    background: #000;
 }
 
 h2 {
 
-}
+}*/
 
 
 p {
     /*color: #fff;*/ /*white*/
-        /*#990012; dark shade of red*/
+    /*#990012; dark shade of red*/
     /*background: #000000;*/ /*black*/
 }
 
-.images{
+/*.images{
     background-image: 
-}
+}*/
 
-.carousel-inner .item  .images {
+.carousel-inner .item .images {
     width: 70%;
     margin: auto;
 }
+
 .carousel-caption {
     opacity: 0.5;
     color: #fff;
     background: #000;
-   
 }
 /*.carousel-indicators {
     opacity: 0.5;

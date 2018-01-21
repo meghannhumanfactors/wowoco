@@ -17,70 +17,136 @@
 </head>
 
 <body>
-    @*<div class="balloons">*@
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-            <li data-target="#myCarousel" data-slide-to="4"></li>
-        </ol>
 
-        <!-- Wrapper for slides 15000milliseconds = 15 seconds ...8000milliseconds = 8sec-->
 
-        <div class="carousel-inner">
-            <div class="item active" data-interval="80000">
-                <div style="text-align: center">
-                    <a href="http://www.imdb.com/name/nm0703558/" target="_blank"><img src="~/images/dj-quik-pic-1-1024x768.jpg" alt="Pic of DJ Quik" /></a>
-                    <div class="carousel-caption">
-                        <h1>Happy Birthday DJ Quik!</h1>
-                        <p> January 18th is a special day!</p>
+
+    <div class= "container">
+        <div class="row">
+            <div class="col-sm-6">
+                <!--Carousel here-->
+            </div>
+            <div class="col-sm-6"></div>
+
+            <!--Grid here-->
+            <div class="grid">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <h1> Send a Digital Greeting Card to your Friend</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 pull-right">
+                <div class="birthday">
+                    <img src="~/images/card_birthday.png" />
+                 <div class="valentines">
+                    <img src="~/images/card_valentines.png" />
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <div class="item" data-interval="80000">
-                <div style="text-align: center">
-                    <a href="https://www.youtube.com/watch?v=scavDac7d1s" target="_blank"><img src="~/images/Quik_Debarge.jpg" alt="Pic of Quik & The Legendary Debarge" /> </a>
-                    <div class="carousel-caption">
-                        <h1>Quik & The Legendary Debarge</h1>
-                        <p>Smile!</p>
-                    </div>
-                </div>
+
+        @*<div class="row">
+            <div class="anniversary">
+                <img src="~/images/card_anniversary.png" class="img-responsive center-block" />
             </div>
 
-            <div class="item" data-interval="80000">
-                <div style="text-align: center">
-                    <a href="https://www.instagram.com/djquik/?hl=en" target="_blank"><img src="~/images/quiklive.jpg" alt="Pic of Quik on the mic live" /> </a>
-                    <div class="carousel-caption">
-                        <h1>DJ Quik on the mic!</h1>
-                        <p>Listen closely!</p>
-                    </div>
+            <div class="babyshower">
+                <img src="~/images/card_babyshower.png" class="img-responsive center-block" />
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="black">
+                <img src="~/images/card_frame_black.png" class="img-responsive center-block" />
+            </div>
+
+            <div class="gold">
+                <img src="~/images/card_frame_gold.png" class="img-responsive center-block" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="wood">
+                <img src="~/images/card_frame_wood.png" class="img-responsive center-block" />
+            </div>
+
+        </div>*@
+   
+
+
+
+    **********************************************************************************************************
+
+    <div class="container  pull-left">
+        
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+            </ol>
+
+            <!-- Wrapper for slides 15000milliseconds = 15 seconds ...8000milliseconds = 8sec-->
+
+            <div class="carousel-inner">
+                <div class="item active" data-interval="800000">
+                    <a href="" target="_blank"><img src="~/images/card_anniversary.png" class="image-responsive center-block" alt="Anniversary frame" /></a>
                 </div>
+
+
+                <div class="item" data-interval="800000">
+                    <a href="" target="_blank"><img src="~/images/card_babyshower.png" class="image-responsive center-block" alt="babyshower frame" /></a>
+                </div>
+
+
+                <div class="item" data-interval="800000">
+                    <a href="" target="_blank"><img src="~/images/card_birthday.png" class="image-responsive center-block" alt="birthday frame" /></a>
+                </div>
+            
+
+            <div class="item" data-interval="800000">
+                <a href="" target="_blank"><img src="~/images/card_frame_black.png" class="image-responsive center-block" alt="Black frame" /></a>
             </div>
 
 
-            <div class="item" data-interval="80000">
-                <div style="text-align: center">
-                    <a href="https://twitter.com/djquik?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="~/images/quikredT.jpg" alt="Pic of Quik on stage with crew" /> </a>
-                    <div class="carousel-caption">
-                        <h1>Bottles Up!</h1>
-                        <p>Get your glasses ready!</p>
-                    </div>
-                </div>
+            <div class="item" data-interval="800000">
+                <a href="" target="_blank"><img src="~/images/card_frame_gold.png" class="image-responsive center-block" alt="Gold Frame " /> </a>
             </div>
+           
+            <div class="item" data-interval="800000">
+                <a href="" target="_blank"><img src="~/images/card_frame_wood.png" class="image-responsive center-block" alt="Wood Frame " /> </a>
+            </div>
+           
 
-            <div class="item" data-interval="80000">
-                <div style="text-align: center">
-                    <a href="https://www.youtube.com/watch?v=g6e29y6ApLs" target="_blank"><img src="~/images/QuikwhiteT.JPG" alt="T- Shirt of Born & Raised in Compton " /> </a>
-                    <div class="carousel-caption">
-                        <h1>Quik is the name</h1>
-                        <p>CRISPY WHITE T!</p>
-                    </div>
-                </div>
+            <div class="item" data-interval="800000">
+                <a href="" target="_blank"><img src="~/images/card_valentines.png" class="image-responsive center-block" alt="Valentines Frame" /> </a>
             </div>
 
 
@@ -94,25 +160,13 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-        <!-- START CODE FOR YOUTUBE VIDEO -->
-
-        <div data-video="YuDh5MB3G8c"
-             data-autoplay="1"
-             data-loop="1"
-             id="youtube-audio"
-             class="youtube-audio">
-        </div>
-        <script src="https://www.youtube.com/iframe_api"></script>
-        <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
-
-        <!-- END CODE FOR YOUTUBE VIDEO -->
-
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-
     </div>
-    @*</div>*@
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+
 </body>
 
 
