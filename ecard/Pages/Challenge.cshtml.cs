@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ecard.Pages
 {
-    public class IndexModel : PageModel
+    public class ChallengeModel : PageModel
     {
         public void OnGet()
         {
