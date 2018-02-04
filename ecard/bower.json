@@ -1,0 +1,13 @@
+{
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "textarea-autosize": "v0.4.2",
+    "font-awesome": "fontawesome#v4.7.0",
+    "jquery-validation": "1.17.0",
+    "bootstrap": "v4.0.0"
+  },
+  "resolutions": {
+    "bootstrap": "v4.0.0"
+  }
+}

@@ -1,0 +1,47 @@
+﻿@page
+@model Bootstrap4Model
+@{
+    ViewData["Title"] = "Bootstrap4";
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, world!</h1>
+        <div class="d-flex flex-column-reverse">
+            <div class="p-3 bg-danger">
+                1
+            </div>
+            <div class="p-3 bg-purple">
+                2
+            </div>
+            <div class="p-3 bg-dark">
+                3
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col bg-danger">
+            1
+        </div>
+        <div class=" col bg-purple">
+            2
+        </div>
+        <div class=" col bg-primary">
+            3
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/assets/js/vendor/popper.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

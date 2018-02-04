@@ -1,0 +1,34 @@
+{
+  "name": "basic-autosize-textarea",
+  "description": "A text area that makes itself big enough to show its content",
+  "version": "0.6.4",
+  "license": "MIT",
+  "main": "basic-autosize-textarea.html",
+  "dependencies": {
+    "basic-shared": "basic-web-components/basic-shared#0.6.4",
+    "polymer": "Polymer/polymer#^1.1"
+  },
+  "devDependencies": {
+    "basic-framed-content": "basic-web-components/basic-framed-content#0.6.4",
+    "web-component-tester": "*"
+  },
+  "keywords": [
+    "basic-web-components",
+    "web-components"
+  ],
+  "ignore": [
+    "**/.*",
+    "/test/"
+  ],
+  "homepage": "https://github.com/basic-web-components/basic-autosize-textarea",
+  "_release": "0.6.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.6.4",
+    "commit": "db48fcccd18dc07b640f3eba31fbe0f3a5bb1ffe"
+  },
+  "_source": "https://github.com/basic-web-components/basic-autosize-textarea.git",
+  "_target": "v0.6.4",
+  "_originalSource": "basic-autosize-textarea",
+  "_direct": true
+}

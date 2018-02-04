@@ -29,11 +29,13 @@ a {
 .container{
     padding-top: 3em;
 }
-.row{
-    margin: 1em;
+
+/*puts space around the img grid*/
+img {
+    padding: 10px;
 }
 
-/*BOOTSTRAP OVERIDES****************************************************************************************/
+/*BOOTSTRAP OVERIDES***************************************************************/
 .carousel-inner .item .images {
     width: 70%;
     margin: auto;
@@ -54,7 +56,7 @@ a {
 /*.carousel-indicators {
     opacity: 0.5;
     background: #000000; /*black*/
-}*/
+/*}*/
 
 
 
