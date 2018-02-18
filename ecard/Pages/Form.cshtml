@@ -1,0 +1,39 @@
+﻿@page
+@model FormModel
+@{
+    ViewBag.PageTitle = "Form";
+    ViewBag.theme = "birthday";
+}
+
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="FriendsName">Friends Name</label>
+            <input name="FriendsName" type="text" class="form-control" placeholder="Friend's Name">
+        </div>
+        <div class="form-group">
+            <label for="friendsemail">Email address</label>
+            <input name="friendsemail" type="email" class="form-control" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input name="subject" type="text" class="form-control" placeholder="Subject">
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" class="form-control" placeholder="Example Message" required maxlength="140"></textarea>
+            <div class="countdown"></div>
+        </div>
+        @*recaptcha start*@
+        <div class="g-recaptcha" data-sitekey="6Le5_S0UAAAAANukdP7UkKR2isiirPXw7DPcZwCb"></div>
+        @*recaptcha end*@
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+@section scripts{
+    <script src="~/lib/textarea-autosize/dist/jquery.textarea_autosize.js"></script>
+    <script>
+        $('textarea').textareaAutoSize();
+    </script>
+    <script src="~/lib/textareacountdown.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>}
