@@ -6,7 +6,7 @@ namespace ecard.Model
     public class Greetings
     {
         [Key]
-        public int? ID { get; set; }
+        public int ID { get; set; }
 
         [DisplayName("Your Friends Name")]
         [Display(Prompt = "Your friend's name")]
@@ -43,6 +43,10 @@ namespace ecard.Model
         [Required(ErrorMessage = "Required")]
         [StringLength(100, MinimumLength = 2, ErrorMessage = "You must enter between 2 to 100 characters")]
         public string yourEmail { get; set; }
+
+        public string created { get; set; }
+
+        public string created_ip { get; set; }
 
 
     }
