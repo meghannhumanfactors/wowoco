@@ -1,55 +1,62 @@
-﻿@page
-@model FormsModel
-@*{
-        ViewBag.meta_title= "Form";
-        ViewBag.meta_keywords= "";
-        ViewBag.meta_desc= "";
-        ViewBag.meta_theme= "birthday";
-    }*@
+﻿
+@page
+@model FormModel
+@{
+    ViewBag.meta_title = "Forms";
+    ViewBag.meta_keywords = "";
+    ViewBag.meta_desc = "";
+    ViewBag.theme = "birthday";
+}
 <div class="container">
     <form method="post">
         <div class="form-group">
-            <label asp-for="@Model._myGreetings.friendsName">Friends Name</label>
-            <input asp-for="@Model._myGreetings.friendsName" type="text" class="form-control">
-            <span asp-validation-for="@Model._myGreetings.friendsName" class="text-danger"></span>
+            <label asp-for="@Model._myGreetings.friendname"></label>
+            <input asp-for="@Model._myGreetings.friendname" type="text" class="form-control" />
+            <span asp-validation-for="@Model._myGreetings.friendname" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <label asp-for="@Model._myGreetings.friendsEmail">Email address</label>
-            <input asp-for="@Model._myGreetings.friendsEmail" type="email" class="form-control">
-            <span asp-validation-for="@Model._myGreetings.friendsEmail" class="text-danger"></span>
+            <label asp-for="@Model._myGreetings.friendemail"></label>
+            <input asp-for="@Model._myGreetings.friendemail" type="email" class="form-control" />
+            <span asp-validation-for="@Model._myGreetings.friendemail" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <label asp-for="@Model._myGreetings.subject">Subject</label>
-            <input asp-for="@Model._myGreetings.subject" type="text" class="form-control">
+            <label asp-for="@Model._myGreetings.subject"></label>
+            <input asp-for="@Model._myGreetings.subject" type="text" class="form-control" />
             <span asp-validation-for="@Model._myGreetings.subject" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <label asp-for="@Model._myGreetings.message">Message</label>
-            <textarea asp-for="@Model._myGreetings.message" class="form-control"></textarea>
+            <label asp-for="@Model._myGreetings.message"></label>
+            <textarea asp-for="@Model._myGreetings.message" class="form-control" maxlength="100"></textarea>
             <div class="countdown"></div>
+            <span asp-validation-for="@Model._myGreetings.message" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <label asp-for="@Model._myGreetings.yourName">Your Name</label>
-            <input asp-for="@Model._myGreetings.yourName" type="text" class="form-control">
-            <span asp-validation-for="@Model._myGreetings.yourName" class="text-danger"></span>
+            <label asp-for="@Model._myGreetings.sendername"></label>
+            <input asp-for="@Model._myGreetings.sendername" type="text" class="form-control" />
+            <span asp-validation-for="@Model._myGreetings.sendername" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <label asp-for="@Model._myGreetings.yourEmail">Email address</label>
-            <input asp-for="@Model._myGreetings.yourEmail" type="email" class="form-control">
-            <span asp-validation-for="@Model._myGreetings.yourEmail" class="text-danger"></span>
+            <label asp-for="@Model._myGreetings.senderemail"></label>
+            <input asp-for="@Model._myGreetings.senderemail" type="email" class="form-control" />
+            <span asp-validation-for="@Model._myGreetings.senderemail" class="text-danger"></span>
         </div>
-        @*recaptcha start*@
-        <div class="g-recaptcha" data-sitekey="6Le5_S0UAAAAANukdP7UkKR2isiirPXw7DPcZwCb"></div>
-        @*recaptcha end*@
-        <div class="button">
-            <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="form-group">
+            <div class="g-recaptcha" data-sitekey="6Le-Jy0UAAAAAMyxngpkD12DzzXto51KmZNciDG2"></div>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit" class="btn btn-primary" />
         </div>
     </form>
 </div>
-@section scripts{
+@section scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <!-- BEGIN: TEXTAREA AUTOSIZE -->
     <script src="~/lib/textarea-autosize/dist/jquery.textarea_autosize.js"></script>
     <script>
         $('textarea').textareaAutoSize();
     </script>
-    <script src="~/lib/textareacountdown.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>}
+    <!-- END: TEXTAREA AUTOSIZE -->
+    <script src="~/lib/textarea-countdown.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+}

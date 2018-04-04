@@ -1,0 +1,63 @@
+1. How would you describe your experience with computer programming / web development? 
+
+radio box
+
+-I've never written a line of ANY kind of code before; no HTML or anything. (Which is fine!)
+
+-I've written a little HTML or CSS before, but I'm completely new to programming languages.
+
+- I have a LITTLE experience with another programming language (like Python, Ruby, PHP, Java, etc), but I'm either new to asp.net or I'm rusty on my coding skills.
+
+- I have a LOT of prior programming experience, but I'm either new to asp.net / web dev, or I'm just feeling rusty on my coding skills and I want to brush up.
+
+
+
+2. What day would prefer to attend a study session?
+radio box
+
+- I can only attend FRIDAY nights (7pm to 9pm)
+- I can only attend SUNDAY evenings (5pm to 7pm)
+- I could attend for either session, but my PREFERENCE is FRIDAY nights.
+- I could attend for either session, but my PREFERENCE is SUNDAY mornings.
+- I could attend either session, and I have no preference.
+
+
+
+3. What would you like to study?
+
+text area
+
+
+
+
+4. What would you like to be able to create? 
+
+text area
+
+
+
+
+5. Please describe any projects you have built in the past?
+text area
+
+
+6. Aside from our in-person study hours, how many hour(s) per week do you plan to spend studying on your own?
+radio box
+- none
+- less than an hour
+- 1 hr
+- 2 hrs
+- 3 hrs
+- 4 hrs
+- 5 hours or more
+
+
+7. Would you like to eat afterwards?
+yes or no
+
+
+8.  Where are you comimg from ?
+
+
+9. Any additional comments or quesitons you would like to share? 
+text area

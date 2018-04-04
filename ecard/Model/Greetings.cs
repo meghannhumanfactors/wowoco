@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace ecard.Model
@@ -8,46 +9,44 @@ namespace ecard.Model
         [Key]
         public int ID { get; set; }
 
-        [DisplayName("Your Friends Name")]
-        [Display(Prompt = "Your friend's name")]
+        [DisplayName("Your Friend's Name")]
+        [Display(Prompt = "Your Friend's Name")]
         [Required(ErrorMessage = "Required")]
         [StringLength(100, MinimumLength = 2, ErrorMessage = "You must enter between 2 to 100 characters")]
-        public string friendsName { get; set; }
+        public string friendname { get; set; }
 
-        [DisplayName("Your Friends Email Address")]
-        [Display(Prompt = "Your friend's Email Address")]
+        [DisplayName("Your Friend's Email")]
+        [Display(Prompt = "Your Friend's Email")]
         [Required(ErrorMessage = "Required")]
         [StringLength(100, MinimumLength = 2, ErrorMessage = "You must enter between 2 to 100 characters")]
-        public string friendsEmail { get; set; }
+        public string friendemail { get; set; }
 
-        [DisplayName("Your Subject")]
-        [Display(Prompt = "Subject")]
+        [DisplayName("Email Subject")]
+        [Display(Prompt = "Email Subject")]
         [Required(ErrorMessage = "Required")]
         [StringLength(100, MinimumLength = 2, ErrorMessage = "You must enter between 2 to 100 characters")]
         public string subject { get; set; }
 
-        [DisplayName("Your Message")]
-        [Display(Prompt = "Enter your Message here")]
+        [DisplayName("Your Custom Message")]
+        [Display(Prompt = "Your Custom Message")]
         [Required(ErrorMessage = "Required")]
-        [StringLength(140, MinimumLength = 2, ErrorMessage = "You must enter between 2 to 100 characters")]
+        [StringLength(100, MinimumLength = 2, ErrorMessage = "You must enter between 2 to 100 characters")]
         public string message { get; set; }
 
         [DisplayName("Your Name")]
         [Display(Prompt = "Your Name")]
         [Required(ErrorMessage = "Required")]
         [StringLength(100, MinimumLength = 2, ErrorMessage = "You must enter between 2 to 100 characters")]
-        public string yourName { get; set; }
+        public string sendername { get; set; }
 
-        [DisplayName("Your Email Address")]
-        [Display(Prompt = "Your Email Address")]
+        [DisplayName("Your Email")]
+        [Display(Prompt = "Your Email")]
         [Required(ErrorMessage = "Required")]
         [StringLength(100, MinimumLength = 2, ErrorMessage = "You must enter between 2 to 100 characters")]
-        public string yourEmail { get; set; }
+        public string senderemail { get; set; }
 
         public string created { get; set; }
 
         public string created_ip { get; set; }
-
-
     }
 }

@@ -1,0 +1,80 @@
+﻿
+@page
+@model QFormModel
+@{
+    ViewBag.meta_title = "Forms";
+    ViewBag.meta_keywords = "";
+    ViewBag.meta_desc = "";
+    ViewBag.theme = "Questions";
+}
+<div class="container">
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="@Model._myQuestions.experience"></label>
+            <input asp-for="@Model._myQuestions.experience" type="text" class="form-control" />
+            <span asp-validation-for="@Model._myQuestions.experience" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model._myQuestions.attend "></label>
+            <input asp-for="@Model._myQuestions.attend " type="text" class="form-control" />
+            <span asp-validation-for="@Model._myQuestions.attend " class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model._myQuestions.study"></label>
+            <input asp-for="@Model._myQuestions.study" type="text" class="form-control" />
+            <span asp-validation-for="@Model._myQuestions.study" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model._myQuestions.learn"></label>
+            <textarea asp-for="@Model._myQuestions.learn" class="form-control" maxlength="100"></textarea>
+            <div class="countdown"></div>
+            <span asp-validation-for="@Model._myQuestions.learn" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model._myQuestions.projects"></label>
+            <input asp-for="@Model._myQuestions.projects" type="text" class="form-control" />
+            <span asp-validation-for="@Model._myQuestions.projects" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model._myQuestions.studying"></label>
+            <input asp-for="@Model._myQuestions.studying" type="email" class="form-control" />
+            <span asp-validation-for="@Model._myQuestions.studying" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model._myQuestions.eat"></label>
+            <input asp-for="@Model._myQuestions.eat" type="text" class="form-control" />
+            <span asp-validation-for="@Model._myQuestions.eat" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="@Model._myQuestions.comingfrom"></label>
+            <input asp-for="@Model._myQuestions.comingfrom" type="text" class="form-control" />
+            <span asp-validation-for="@Model._myQuestions.comingfrom" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="@Model._myQuestions.comments"></label>
+            <textarea asp-for="@Model._myQuestions.comments" class="form-control" maxlength="100"></textarea>
+            <div class="countdown"></div>
+            <span asp-validation-for="@Model._myQuestions.comments" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <div class="g-recaptcha" data-sitekey="6Le-Jy0UAAAAAMyxngpkD12DzzXto51KmZNciDG2"></div>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+@section scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <!-- BEGIN: TEXTAREA AUTOSIZE -->
+    <script src="~/lib/textarea-autosize/dist/jquery.textarea_autosize.js"></script>
+    <script>
+        $('textarea').textareaAutoSize();
+    </script>
+    <!-- END: TEXTAREA AUTOSIZE -->
+    <script src="~/lib/textarea-countdown.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+}

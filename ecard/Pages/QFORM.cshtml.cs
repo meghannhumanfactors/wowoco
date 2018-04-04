@@ -13,12 +13,12 @@ using System.Threading.Tasks;
 
 namespace ecard.Pages
 {
-    public class FormModel : PageModel
+    public class QFormModel : PageModel
     {
 
         // WOWOCO: 1
         [BindProperty]
-        public Greetings _myGreetings { get; set; }
+        public Questions _myQuestions { get; set; }
 
         // WOWOCO: 2
         private DbBridge _myDbBridge { get; set; }
@@ -27,7 +27,7 @@ namespace ecard.Pages
         private IConfiguration _myConfiguration { get; set; }
 
         // WOWOCO: 4
-        public FormModel(DbBridge DbBridge, IConfiguration Configuration)
+        public QFormModel(DbBridge DbBridge, IConfiguration Configuration)
         {
             _myDbBridge = DbBridge;
             _myConfiguration = Configuration;
@@ -46,33 +46,33 @@ namespace ecard.Pages
                 {
                     try
                     {
-                        _myGreetings.created = DateTime.Now.ToString();
-                        _myGreetings.created_ip = this.HttpContext.Connection.RemoteIpAddress.ToString();
+                        _myQuestions.created = DateTime.Now.ToString();
+                        _myQuestions.created_ip = this.HttpContext.Connection.RemoteIpAddress.ToString();
 
 
-                        _myGreetings.friendname = _myGreetings.friendname.Replace("i", "3");
-                        _myGreetings.friendname = _myGreetings.friendname.Replace("She said, \"Hello!\"", "");
-                        _myGreetings.senderemail = _myGreetings.senderemail.ToLowerInvariant();
-                        _myGreetings.friendemail = _myGreetings.friendemail.ToUpperInvariant();
+                        //_myQuestions.friendname = _myQuestions.friendname.Replace("i", "3");
+                        //_myQuestions.friendname = _myQuestions.friendname.Replace("She said, \"Hello!\"", "");
+                        //_myQuestions.senderemail = _myQuestions.senderemail.ToLowerInvariant();
+                        //_myQuestions.friendemail = _myQuestions.friendemail.ToUpperInvariant();
 
                         // DB Related add record
-                        _myDbBridge.Greetings.Add(_myGreetings);
+                        _myDbBridge.Questions.Add(_myQuestions);
                         _myDbBridge.SaveChanges();
 
                         //REDIRECT to the page with a new operator (name/value pair)
-                        return RedirectToPage("Forms", new { id = _myGreetings.ID });
+                        return RedirectToPage("QForm", new { id = _myQuestions.ID });
                     }
 
                     catch (Exception ex)
                     {
                         Console.WriteLine(ex);
-                        return RedirectToPage("Forms");
+                        return RedirectToPage("QForm");
                     }
                 }
             }
             else
             {
-                ModelState.AddModelError("_myGreetings.reCaptcha", "Please verify you're not a robot!");
+                ModelState.AddModelError("_myQuestions.reCaptcha", "Please verify you're not a robot!");
             }
 
             return Page();
